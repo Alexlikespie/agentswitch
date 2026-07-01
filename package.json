@@ -1,0 +1,23 @@
+{
+  "name": "local-converter",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "Local-only conversion between LLM CLI providers using CodeTeleport core",
+  "main": "dist/cli/convert.js",
+  "bin": {
+    "local-converter": "dist/cli/convert.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli/convert.js"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "tar": "^7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "@types/tar": "^6.1.13",
+    "typescript": "^5.4.0"
+  }
+}
